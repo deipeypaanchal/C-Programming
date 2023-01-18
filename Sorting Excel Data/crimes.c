@@ -1,6 +1,4 @@
 /*
-Author: Deepey Panchal
-U-Number: U80305771
 
 >> This program is designed to sort the states by rate of all violent crimes, in descending order
 >> User is prompted for an input file to collect the data which is further sorted in the output file
