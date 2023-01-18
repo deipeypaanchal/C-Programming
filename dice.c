@@ -1,9 +1,5 @@
 /*
-Author: Deepey Panchal
-U-Number: U80305771
-
-This C program stimulates a simple dice game. It is a two players game.
-After throwing the dice, the player whose value is greater wins the round.
+This C program stimulates a simple dice game. It is a two players game. After throwing the dice, the player whose value is greater wins the round.
 */
 
 #include <stdio.h>
