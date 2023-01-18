@@ -113,64 +113,6 @@ void clear_list(struct student *list)
     }
 }
 
-/*
-struct student *remove_from_list(struct student *list)
-{
-    // Initializing char first, last and email
-    char first[NAME_LEN];
-    char last[NAME_LEN];
-    char email[EMAIL_LEN];
-    // Prompting user for the first name, last name, and the email of the student to remove from the list
-    printf("Enter student first name: ");
-    read_line(first, NAME_LEN);
-    printf("Enter student last name: ");
-    read_line(last, NAME_LEN);
-    printf("Enter student email: ");
-    read_line(email, EMAIL_LEN);
-    // Creating two pointers ptr and temporary and both are pointing to the list for now which is the head
-    struct student *ptr = list;
-    struct student *temporary = list;
-    // If the first value is NULL which means the list is empty, Program would return NULL
-    if (ptr == NULL)
-    {
-        printf("No students in the list");
-        return NULL;
-    }
-    // While loop is used to iterate through the list till we reach the last node which will have the NULL value
-    while (ptr != NULL)
-    {
-        // If the user entry matches with the existing data in the linked list, we would remove it
-        // String compare is used for that purpose
-        if (strcmp(ptr->first, first) == 0 && strcmp(ptr->last, last) == 0 && strcmp(ptr->email, email) == 0)
-        {
-            // We need extra if else statement here to make sure if the head is removed, the program functions correctly
-            if (temporary == ptr)
-            {
-                list = ptr->next;
-            }
-            else
-            {
-                temporary->next = ptr->next;
-            }
-            // Printing a message with the student's details which is being removed
-            printf("%s\t%s\t%s\t%s\t%s is removed.\n", ptr->first, ptr->last, ptr->email, ptr->instrument, ptr->group);
-            // and then removing it from the list using free()
-            free(ptr);
-            return list;
-        }
-        // When the string compare is not 0 i.e. the student doesn't matches the list, the loop moves forward
-        else
-        {
-            temporary = ptr;
-            ptr = ptr->next;
-        }
-    }
-    // If the student is not in the list. Printing a message.
-    printf("Student not found. Please try again.");
-    return list;
-}
-*/
-
 struct student *remove_from_list(struct student *list)
 {
     struct student *new = malloc(sizeof(struct student));
