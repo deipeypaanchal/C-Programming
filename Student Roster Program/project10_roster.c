@@ -1,8 +1,5 @@
 /*
-Author: Deepey Panchal
-U-Number: U80305771
-
-This the project10_roster file which contains the main function
+This file which contains the main function
 Header files are imported
 */
 
