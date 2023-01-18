@@ -1,8 +1,5 @@
 /*
-Author: Deepey Panchal
-U-Number: U80305771
-
-This program calculates and prints the charges of a tool rental company.
+This program calculates and prints the charges of a tool rental company. 
 The user should enter the selection, hours, and print the charge.
 There is a minimum fee for up to four hours and an additional hourly fee if that limit exceeds.
 There is also a maximum charge for rental per day.
